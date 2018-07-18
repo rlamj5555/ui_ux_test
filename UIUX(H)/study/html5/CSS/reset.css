@@ -29,6 +29,6 @@ a:active  {color:#486d9b; text-decoration:none}
 
 body {overflow-y:scroll;color:#696f74;font-size:0.8em;font-family:'Nanum Gothic',돋움,dotum,굴림,gulim,sans-serif,Helvetica,AppleGothic;line-height:1.25em}
 
-  .text-center{height:100px;line-height: 100px;text-align:center;
+.text-center{height:100px;line-height: 100px;text-align:center;}
       /* ctrl + shift + m => 한줄로 바꾸기 
       또는 merge*/
