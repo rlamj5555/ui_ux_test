@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"> 
+    <title>요소의 바깥쪽 여백을 의미하는 margin</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <style>
+        /*   .text-center 클래스가 붙어있는 모든 요소
+        . 앞에는 * 이 생략되어있다.  */
+    /*    .text-center{
+            height:100px;
+            line-height: 100px;
+            text-align:center;*/
+/*            /*background-color: yellow;*/
+            
+        }
+    </style>
+</head>
+<body>
+   <div id="wrap">
+      <!--
+      header, section, article, footer, nav, aside(페이지 오른쪽에 있는 광고 등 본문과 관련이 없는)
+      이러한 태그들을 HTML5 레이아웃용 시멘틱 태그라고 한다.
+      
+      이 태그들의 역할은 브라우저에게 각각의 영역에 대한 의미만을 부여할 뿐 기본 css와는 아무 관계가 없다.
+      -->
+       <h1 class = "text-center">margin사용법</h1>
+       <section>
+          <h2 class = "text-center">margin의 상황별 이해</h2>
+           <!--본문 내용이라는 의미-->
+           <article class = "case_1">
+              <h3 class = "text-center">1. 부모자식 관계의 margin</h3>
+              <div class="parent">
+                  <p class="child">자식</p>
+              </div>
+               
+
+           </article>
+       </section><!--div지만 의미있는 div-->
+       <!--
+       div -> h1, p, affress ...
+       블럭요소는 위의 요소들 처럼 div를 상속받는다.
+       
+       div -> section (내용 영역)
+            
+       -->
+       <footer>
+           <address>&copy;Designed by 홍길동</address>
+       </footer>
+   </div>
+    
+</body>
+</html> 
+
+
+
+
+<!--
+margin : 바깥쪽 여백을 의미
+부모자식 관계에서 자식에게 margin을 주면, 밀려날 곳이 없으면, 여백이 밀려서 생김. 
+margin은 움직일 요소에게 줌.
+
+안쪽으로는 margin을 줄 수 없다.-->
