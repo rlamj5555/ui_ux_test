@@ -46,7 +46,7 @@
 			}
 			
 			.case_2>.parent>p{
-				display:inline-block;
+/*				display:inline-block;*/
 				width:100px;
 				height:100px;
 				line-height:100px;
@@ -60,16 +60,20 @@
         위로 100, 오른쪽 150, 아래 20, 왼쪽 20*/
 			
 			.case_2>.parent>.child_1{
-                margin-top:100px;
-                margin-right: 150px;/*형제관계에서는 한 쪽을 밀려나게 한다. */
-                margin-bottom: 20px;                
-                margin-left: 200px;                
+               
+/*                margin-top:100px;*/
+/*                margin-right: 150px;형제관계에서는 한 쪽을 밀려나게 한다. */
+/*                margin-bottom: 20px;                */
+/*                margin-left: 200px;                */
 		
+                
+                /*사방이 동일한 값일 경우 약식표현법*/
                 /*동일하지만 다른 표기법
                 두 개 이상은 대부분 약식 표현법을 쓴다.*/
                 
-                margin:100px 150px 20px 200px;
-                
+/*                margin:100px 150px 20px 200px;*/
+                margin:100px 70px;/*위 아래가 동일하고, 좌우가 동일한 경우*/
+                display:inline-block;
                 
                 background-color:yellow;
                 
@@ -78,8 +82,22 @@
 			
 			.case_2>.parent>.child_2{
 				background-color:pink;
+                display:inline-block;
+                margin:50px;
+                margin:100px 70px 20px 70px;/*위 아래는 다르고 좌우만 동일한 경우*/
+/*                margin-left: 100px*/
+                            
+			}
+        
+        
+        	.case_2>.parent>.child_3{
+				background-color:orange;
+/*              disblock;*/
+                margin:20px 0x 70px;
                 
 			}
+        
+        /*margin:0 0  0 50px*/
         
         
         /***********************************************/
@@ -115,10 +133,29 @@
         
         
         .case_3>.parent>.child_2{
+            
             margin-left: 400px;
             background-color: darkred;
         }
-			
+        
+        
+        /*******************************************************/
+        article.case_4{background-color: yellow;}
+        
+        .case_4>.auto{
+            width:200px;height:80px;
+            margin:0 auto;
+            
+            margin:0 auto 100px; /*좌우로 auto, 아래로 100px */
+            margin:100px auto 0;
+            line-height:80px;
+            text-align:center;
+            background-color: chocolate;
+        }
+			/*박스를 부모 요소를 기준으로 가로 중앙에 배치하고자 할 때, 
+              margin:0 auto를 지정한다.
+        
+        auto 키워드는 좌우만 적용된다.*/
         
         
     </style>
@@ -171,7 +208,7 @@
 			</p>
 			
 			<div class="parent">
-				<p class="child_1">자식1</p><p class="child_2">자식2</p>
+				<p class="child_1">자식1</p><p class="child_2">자식2</p><p class="child_3">자식3</p>
 			</div>
 			
 		</article>
@@ -179,12 +216,21 @@
 		<hr>
 		
 		<article class="case_3">
-		    <h3>부모의 폭과 margin의 관계</h3>
+		    <h3>3. 부모의 폭과 margin의 관계</h3>
 		    <div class="parent">
 				<p class="child_1">자식1</p><p class="child_2">자식2</p>
 			</div>
 		    
 		    
+		</article>
+		
+		
+		<article>
+		    <hr>
+		    <article class="case_4">
+		        <h3>4. 가로 중앙으로 배치하는 auto 키워드</h3>
+		        <p class="auto">가로 중앙 박스</p>
+		    </article>
 		</article>
 	
 	</section>
