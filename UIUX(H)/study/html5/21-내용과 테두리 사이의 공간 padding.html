@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"> 
+    <title>내용과 테두리 사이의 공간 padding</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <style>
+        
+        /*기본 설정*/
+        
+        a:link{font-weight:800;}
+        a:visited{color:black !important;}
+        a:hover{
+            color:black !important;
+            background-color: white !important;
+        }
+        
+        /*
+        !important: 최우선적으로 적용해라  
+        */
+       a:first-child:hover{
+            color:white !important;
+            background-color: black !important;
+        }
+        
+        a:active{
+            color:indianred !important;
+        }
+        
+     
+        /*진입 후 마우스 왼쪽 버튼을 누르고 있는 상태*/
+        
+        /*마우스 포인터가 a영역 안으로 진입한다.
+        (mouseover의 개념이 아니라 mouseenter의 개념)
+        */
+        #wrap{
+            width:800px;/*block요소의 기본 width값은 (부모의) 100%*이다.*/
+            margin:0 auto;/*위아래로 0이고 좌우로 auto*/
+/*            박스까지 center로 정렬 가능*/
+/*            border:1px solid black;*/
+            
+                    
+            /*text-align : center; 는 box안에서 텍스트를 정렬할 수 있지만, 
+            box자체가 중앙으로 정렬되진 않는다. */
+        }
+        
+        section>h2{margin-bottom:30px;}
+        
+/*        section>article:first-child>h3{*/
+        section>article.frst>h3{
+            height:200px;
+            
+            margin-bottom:100px;
+            padding-top:50px;
+/*            auto개념이 없다. padding은 박스 크기에 영향을 미친다.*/
+            /*박스 크기는 252px(border 두 개까지 포함 )*/
+/*            padding 적용시 box의 크기가 늘어난다. */
+/*            padding : top, right, bottom, left*/
+            border:1px solid red;
+        }
+        
+        /*첫번쨰 아티클의 h3를 선택*/
+    
+        /***************************************/
+        
+        section>article.sec{margin-bottom: 100px;}
+        section>article.sec>p{margin-top: 20px;}
+        /*inline요소는 위, 아래 margin, padding이 정상적으로 적용되지 않기 때문에 반드시 block의 속성을 적용한다.*/
+        
+        
+        
+        
+        /*inline요소는 padding시에 inline-block 해줘야 들어감.*/
+        section>article.sec>p>a{
+            /*width와 height를 이용해도 되지만, 여기서는 배운 내용을 토대로 margin과 padding을 이용*/
+            display:inline-block;
+            
+            padding-right: 30px;
+            padding-left:30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+            color:white;
+/*            font-weight:300;*/
+            background-color: indianred;
+            
+/*            outline:1px solid red;*/
+           
+          
+            /*outline 은 box size에 영향을 미치지 않는다.*/
+        }
+        /*section a 라고 써도 됨*/
+        
+        
+        section>article.sec>p>a:first-child{
+            padding-right: 30px;
+            padding-left:30px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            color:black;
+            background-color: white;
+            border: 1px solid black;
+            
+        }
+        
+        
+        section>article.sec>p>a:nth-child(2){
+            background-color: firebrick;
+        }
+        
+        
+          section>article.sec>p>a:nth-child(3){
+            background-color: indianred;
+        }
+        
+         
+          section>article.sec>p>a:nth-child(4){
+            background-color: gray;
+        }
+
+        
+        section>article.sec>p>a:last-child{
+            background-color: darkred;            
+        }
+
+        /* : first-child last-child 등 : 표기로 선택을 도와주는 가상선택자*/
+        
+        /*
+        - 태생자체가 부모 자식의 패밀리 구조로 이루어진 태그들은 
+        :first-child 같은 가상선택자가 100% 정상적으로 작동한다.
+        
+        그러나 코딩 중 만들어진 인위적인 부모자식 관계에서 
+        가상선택자를 사용할 경우 정상적으로 될 떄도 있지만 
+        비정상적으로 작동하기도 한다. 
+        
+        만약 비정상적으로 작동할 경우 고민하지 않고 
+        빨리 다른 방법을 찾는 것이 현명하다. */
+        
+        
+        /**********************************************/
+        h4{
+            height:100px;
+            line-height:100px;
+        }
+        
+        h4>span:before{content:'나이 : ';}
+        h4>span:after{content:'세';}
+        
+        /*검색 엔진은 이 문구를 알아채지 못한다.
+        광고같은 걸 해야할 때는 쓰면 안됨 : 알아채지 못하므로*/
+        
+        
+        article.last>p:before{content:'날씬한 기분의 ';}
+        article.last>p:after{content:' 다이어트 식이섬유';}
+        
+    </style>
+</head>
+<body>
+   <div id="wrap">
+       <header><h1 class="text-center">박스의 안쪽 여백 padding</h1></header><!--header:머리말, section:본문, footer:꼬리말-->
+       
+       <section>
+          
+          
+          <h2>내용을 읽기 편하게 하는 역할의 padding</h2>
+           <article class="frst">
+               <h3>padding을 사용하지 않으면 내용이 경계선에 달라붙는다.</h3>              
+           </article><!--section 영역을 여러부분으로 나누고 싶을 때
+           section은 h2를 쓰는 게 좋다.-->   
+           
+           <hr>
+                     
+           <article class = "sec">
+               <h3>가상선택자를 이용한 선택(selecting)</h3>
+               <p>
+                   <a href="https://naver.com/"  target="_blank">Home</a> 
+                   <a href="http://google.com/"  target="_blank">About me</a> 
+                   <a href="http://daum.net"  target="_blank">Portfoio</a> 
+                   <a href="http://gamejob.co.kr/main/home" target="_blank">Design</a> 
+                   <a href="#5">Epiliogue</a> 
+               </p>     
+               
+               <!--inline요소는 block요소로 감싸야한다. -->
+           </article>
+           
+           <hr>
+           
+           <article class = "last">
+              <h3>가상선택자 :before, :after</h3>
+              
+              <h4><span>20</span></h4>
+              
+              <p>미에로화이바 </p>
+           </article>
+           
+           
+       </section>
+       
+       <footer><address class="text-center">&copy;Designed by 홍길동</address></footer><!--entity code-->
+       
+   </div>
+    
+</body>
+</html> 
