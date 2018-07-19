@@ -52,7 +52,19 @@ section>.guide>h3{
 section>.guide>ul{
     margin-left: 30px;
 }
-section>.guide>ul>li{}
+
+section>.guide>ul>li{
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+section>.guide>ul>li>span{
+    display: block;
+    text-indent: 8px;
+/*    margin-left: 8px랑 같다.;*/
+}
+
+
 
 
 
