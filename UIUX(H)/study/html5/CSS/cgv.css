@@ -83,13 +83,44 @@ section>.contact>h3{
     
 }
 section>.contact>div{
+    margin: 0 15px 20px;
     padding:20px;
     border: 1px solid #e1ddd3;
 2;
     
 }
-section>.contact>div>ul{}
-section>.contact{}
+section>.contact>div>ul{
+/*    border: 1px solid red;*/
+    
+}
+section>.contact li{
+    height:18px;
+    line-height: 18px;
+/*    background-col*/
+
+
+/*    border: 1px solid red;*/
+}
+
+/*height와 line-height를 꼭 같이 써야 하는가*/
+
+{
+    margin-top: 20px;
+    border: 1px solid blue;
+   
+}
+
+
+section>.contact>div>p{
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/*
+문맥 선택자는 자손을 선택할 때 사용하는데 한 칸 공백으로 표현한다.
+주의:선택 시 중복되는 요소를 반드시 확인하며, 신중히, 문제가 없다는 것이 
+확실할 때 사용한다.
+*/
 
 
 
@@ -104,6 +135,16 @@ section>.contact{}
     border:2px solid #727272;
     border-radius: 5px;
 }*/
+
+
+section>.contact>p{
+    margin:20px 15px ; padding: 20px 0 20px 20px;
+    /*h3와 마진 통합 현상이 발생하므로 의미없음.*/
+    line-height: 18px;
+    border: 1px solid #e1ddd3;
+    
+}
+
 
 /*푸터영역*/
 footer>p>button{
