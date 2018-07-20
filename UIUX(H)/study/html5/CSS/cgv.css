@@ -69,9 +69,27 @@ section>.guide>ul>li>span{
 
 
 
+section>.contact{
+    margin-top: 30px;
+/*    border: 1px solid red;*/
+}
+
+section>.contact>h3{
+    margin-bottom : 20px;
+    text-indent: 30px;
+    /*margib left랑 똑같음*/
+    font-size:13px;   
+    
+    
+}
+section>.contact>div{
+    padding:20px;
+    border: 1px solid #e1ddd3;
+2;
+    
+}
+section>.contact>div>ul{}
 section>.contact{}
-
-
 
 
 
