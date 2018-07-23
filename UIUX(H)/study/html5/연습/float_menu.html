@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>float을 이용한 박스 나열</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        
+        hr{position: static;left: 0; margin: 50px 0 ;}
+/*        #wrap{text-align: center;}*/
+  
+      
+  
+        .test{*zoom:1;}
+
+        h1{text-align: center;}
+        p{width: 638px; height: 300px; text-align: center; line-height: 300px;}
+        test{text-align: center;}
+
+        .test:after{display: block;clear: both;  content: "";}
+        .test>span{float: left;display: inline-block;width:150px; height: 50px;line-height: 50px; text-align: center;
+        border: 1px solid black;}
+        
+        .test>span.frst{background-color: white;}
+        .test>span.sec{background-color: white;}
+        .test>span.thrd{color:black;background-color: white;}
+        .test>span.last{color:black;background-color: white;}
+        
+        
+  
+    </style>
+</head>
+<body>
+ <div id="wrap">
+     <h1 class = "text-center">웹표준 퍼블리싱 강좌</h1>
+     
+     <!-------------------------------------------------->
+     
+     
+     
+     <p class="test">
+         <span class="frst">보충특강</span>
+         <span class="sec">문제풀이</span>
+         <span class="thrd">자료실</span>
+         <span class="last">작업환경</span>
+ 
+     </p>
+     
+     
+     <p>메뉴 선택에 따른 내용 출력란</p>
+     
+     
+ </div>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

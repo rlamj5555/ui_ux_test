@@ -6,25 +6,51 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/reset.css">
     <style>
+        
+        hr{position: static;left: 0; margin: 50px 0 ;}
 /*        #wrap{text-align: center;}*/
-        li{float: left; display: inline-block;width: 200px;height: 100px;line-height: 98px;text-align: center;}
+        li{float: left; display: inline-block;width: 200px;height: 100px;line-height: 100px;text-align: center;}
         /*float 을 쓰면 공백을 없애줌*/
         /*float : right은 잘 쓰이지 않음.*/
-        .frst{background-color: red;}
+        .frst{color : white; background-color: red;}
         .sec{background-color: orange;}
         .thrd{background-color: yellow;}
-        .last{background-color: cadetblue;}
+        .last{color : white; background-color: cadetblue;}
         
         .clearfix{clear:both;}
+/*        p{clear: both;}*/
+        
+        /****************************************************************************************/
+      
+        .subject:after{display: block; clear: both; background-color: deeppink; content:"";}
+        
+        .subject>ol{float: left; display: inline-block; width:200px;height: 100px; color: aliceblue; line-height: 100px; text-align: center;}
+        .subject>li:first-child{color : black; background-color: aquamarine;}
+        .subject>li:nth-child(2){color : white; background-color: darkcyan;}
+        .subject>li:nth-child(3){color : black; background-color: burlywood;}
+        .subject>li:last-child{color : white; background-color: darkgoldenrod;}
         
         /* 
         .study>li:first-child{background-color}
         이 방식도 있음
         
         */
+        /*******************************************************************************/
+  
+        .test{*zoom:1;}
+        /*구형 ie브라우저에서 아래의 : after가상 선택자 구문을 인식하게 하는 코드로서 CSS핵 이라고 불리운다. */
         
 
+        .test:after{display: block;clear: both;  content: "";}
+        .test>span{float: left;display: inline-block;width:100px; height: 100px;line-height: 100px; text-align: center;}
         
+        .test>span.red{background-color: red;}
+        .test>span.yellow{background-color: yellow;}
+        .test>span.blue{color:white;background-color: blue;}
+        .test>span.green{color:white;background-color: green;}
+        .test>span.pink{background-color: pink;}
+        
+  
     </style>
 </head>
 <body>
@@ -32,10 +58,10 @@
     <h1 class = "text-center">float을 이용한 박스 나열</h1>
      
      <ul class="study">
-         <li class = "frst">HTML5</li>
-         <li class = "sec">CSS</li>
-         <li class="thrd">Javascript</li>
-         <li class = "last">jQuery</li>
+        <li class = "frst">HTML5</li> 
+        <li class = "sec">CSS</li>
+        <li class="thrd">Javascript</li>
+        <li class = "last">jQuery</li>
      </ul>
      
      <div class = "clearfix"></div>
@@ -47,7 +73,43 @@
      
      <p>안녕</p>
      
+     
+     <!-------------------------------------------------->
+     
      <hr>
+     
+     
+     
+     <ol class="subject">
+         <li>UI/UX</li>
+         <li>포토샵</li>
+         <li>일러스트</li>
+         <li>포트폴리오</li>
+     </ol>
+      
+
+
+<!--     <div class="clearfix"></div>-->
+<!--     <p style="clear: both;">추천과목</p>-->
+     <p>인기과목</p>
+     
+     <hr>     
+     
+     <!--문제) 가상선택자를 이용하여 float을 완성하세요 
+     박스사이즈 : 100 * 100-->
+     
+     
+     <p class="test">
+         <span class="red">red</span>
+         <span class="blue">blue</span>
+         <span class="yellow">yellow</span>
+         <span class="green">green</span>
+         <span class="pink">pink</span>
+     </p>
+     
+     
+     <p>플롯테스트</p>
+     
      
  </div>
   
