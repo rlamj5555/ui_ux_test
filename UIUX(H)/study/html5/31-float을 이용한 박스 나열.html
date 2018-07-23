@@ -2,14 +2,54 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>float을 이용한 박스 나열</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/reset.css">
     <style>
+/*        #wrap{text-align: center;}*/
+        li{float: left; display: inline-block;width: 200px;height: 100px;line-height: 98px;text-align: center;}
+        /*float 을 쓰면 공백을 없애줌*/
+        /*float : right은 잘 쓰이지 않음.*/
+        .frst{background-color: red;}
+        .sec{background-color: orange;}
+        .thrd{background-color: yellow;}
+        .last{background-color: cadetblue;}
+        
+        .clearfix{clear:both;}
+        
+        /* 
+        .study>li:first-child{background-color}
+        이 방식도 있음
+        
+        */
+        
+
         
     </style>
 </head>
 <body>
+ <div id="wrap">
+    <h1 class = "text-center">float을 이용한 박스 나열</h1>
+     
+     <ul class="study">
+         <li class = "frst">HTML5</li>
+         <li class = "sec">CSS</li>
+         <li class="thrd">Javascript</li>
+         <li class = "last">jQuery</li>
+     </ul>
+     
+     <div class = "clearfix"></div>
+     <!--float의 끌어당기는 영향력을 차단시키는 마감재 역할-->
+     <!-- 이 이후의 요소들이 float의 영향을 받지 않을 수 있다.-->
+     
+     <!--1. float의 끌어당기는 영향력을 차단시키는 마감재 역할
+         2. float의 영향을 차단시키는 마감재 사용은 필수(반드시)-->
+     
+     <p>안녕</p>
+     
+     <hr>
+     
+ </div>
   
 </body>
 </html>
