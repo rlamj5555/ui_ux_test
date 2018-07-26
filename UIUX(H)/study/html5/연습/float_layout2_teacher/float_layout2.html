@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>float을 이용한 레이아웃</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <style>
+			*{margin:0;padding:0;}
+		
+			/* CSS 코드를 작성하세요 */
+        #wrap{width: 960px;margin: 30px auto 0; font-weight: 800; font-size: 2em;text-align: center;}		
+/*        텍스트 관련 속성은 자식에게 상속된다.*/
+/*        1em=16px;*/
+        header{height: 100px; background-color: grey;}
+        
+        section{margin-top: 10px;}
+        section.cont{background-color: yellow;}
+        section>.left{width: 200px;}
+        section>.left>.lnb{height: 250px; background-color: antiquewhite; margin-bottom: 10px;}
+        section>.left>.ad{height: 140px; background-color: chartreuse;}
+        
+        footer{background-color: aqua; border-radius: 10px;}
+        /*outline은 border-radius가 적용되지 않는다.*/
+        
+        
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+	<header>헤더</header>
+	<section>
+		<article class="left">서브메뉴</article>
+		<article class="cont">컨텐츠</article>
+	</section>
+	<footer>푸터</footer>
+</div>    
+            
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
