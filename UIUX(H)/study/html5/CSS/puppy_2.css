@@ -2,5 +2,30 @@
 
 
 #wrap{width:600px; margin: 0 auto;background-color: #333;}
-header{height: 100px; background-color: #069;}
+header{position: relative; height: 100px; background-color: #069;}
+header>h1{position: absolute; left: 30px; top: 40px; color: white;font-size: 30px;}
+header>nav{color: white;}
+header>nav>.gnb{width: 260px;*zoom:1;}
+header>nav>.gnb>li{width: 65px;float: left;font-size: 20px;}
+header>nav>.gnb:after{display: block; clear: both; content: '';}
+header>nav.gnbl>li>a{display: block; color:#fff;background-color: yellow;}
+
+
+section{ width: 570px; margin: 0 auto; padding: 30px 10px 10px 10px; background-color: white;}
+
+section>h2{font-size: 25px; margin-bottom:25px; color: #000; }
+
+section>p{font-size: 14px; line-height: 1.5;/* 150% */*zoom:1;}
+section>p:after{display: block; clear: both; content: '';}
+
+section .frame{display:block; overflow: hidden; width:300px; margin: 5px 0 5px 5px; border-radius: 5px; box-shadow: 3px 3px 3px #aaa;}
+section .frame>img{width: 100%;}
+
+/*이미지 밑에 약간 뜨는 현상 해결방법
+1. 이미지한테 display-:block을 주기
+2. vertical- align을 top으로 주기
+*/
+
+
 footer>address{height:80px; color: white; font-weight: 800; font-size: 16px; line-height: 80px; text-align: center;}
+/* nth-child{}는 친형제 관계에서만 성립 */

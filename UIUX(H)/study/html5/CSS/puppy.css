@@ -3,8 +3,14 @@
 #wrap{width: 600px; margin: 0 auto;}
 
 header{width: 600px; height: 100px; background-color: #006699;}
-header>ul>li{display: inline-block;margin-left: 20px;color: white; font-weight: 800; font-size:18px;line-height: 100px;}
+header>ul>li{display: inline-block;margin-left: 20px;color: white; font-weight: 800; font-size:18px;line-height: 100px}
 header>ul>li>h1{display: inline-block; font-size: 30px; margin-left: 10px; margin-right: 20px; line-height: 100px; }
+header>ul>li:nth-child(4)>a{color: yellow;}
+
+
+/*text-shadow: 1px 1px 1px rgba{255,255,255,0.5}
+a == 투명도 */
+
 
 a:visited{color: white;}
 a:hover{color:yellow;}
@@ -17,6 +23,8 @@ img{float: right; width: 300px;  margin-left: 10px; box-shadow: 5px 5px 3px grey
 footer{width: 600px;  height: 80px; color: white; font-size: 16px; line-height: 80px; text-align: center; background-color:#333;}
 
 
+
+/*인라인요소는 상하 마진만 된다. 좌우는 안됨. 하지만 img요소는 상하좌우 모두 마진을 줄 수 있다.*/
 
 
         
