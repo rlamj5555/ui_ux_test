@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+
+#wrap{width:600px; margin: 0 auto;background-color: #333;}
+header{height: 100px; background-color: #069;}
+footer>address{height:80px; color: white; font-weight: 800; font-size: 16px; line-height: 80px; text-align: center;}
