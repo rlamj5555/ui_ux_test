@@ -21,11 +21,6 @@ section>p:after{display: block; clear: both; content: '';}
 section .frame{display:block; overflow: hidden; width:300px; margin: 5px 0 5px 5px; border-radius: 5px; box-shadow: 3px 3px 3px #aaa;}
 section .frame>img{width: 100%;}
 
-/*이미지 밑에 약간 뜨는 현상 해결방법
-1. 이미지한테 display-:block을 주기
-2. vertical- align을 top으로 주기
-*/
 
 
 footer>address{height:80px; color: white; font-weight: 800; font-size: 16px; line-height: 80px; text-align: center;}
-/* nth-child{}는 친형제 관계에서만 성립 */

@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+#wrap{width: 600px; margin: 0 auto; margin-top: 20px; }
+
+
+header{position: absolute; top:80px; margin-top: -75px; height: 100px; width: 600px; line-height: 100px; background-color: #006699; }
+
+header>h1{margin-left: 20px; margin-bottom: 10px; position: absolute; color: white; font-size: 30px;}
+
+header>nav>ol.gnb>li>a{color: white;}
+header>nav>ol.gnb>li>a:hover{color: yellow;}
+
+header>nav>.gnb>li{display: inline-block; position: relative; left: 250px; margin-right: 10px; font-size: 16px;  font-weight: 800; }
+
+/*hover로 yellow색상 표현*/
+/*<span class="frame"><img src="images/puppy_4.jpg" alt="" title="정말 귀여운 강아지" /></span>*/
+
+
+section>p>span.frame{display: block;float: right; width: 300px;height: 200px; text-indent: -9999px; background-image:url(../images/puppy_3.jpg);background-size: contain;background-position: center; background-repeat: no-repeat;}
+/*background-image:url(images/welcome.gif);*/
+    
+
+
+
+section{border: 5px solid black;}
+section>h2{position: absolute; top: 150px;margin-bottom: 20px; color: black; font-size: 25px; text-indent: 20px;}
+
+section>p{width:600ps;margin:80px 10px 20px 10px; line-height: 1.5; font-size: 14px;*zoom :1;}
+
+footer{position: relative; top: 620px; width: 600px; height: 80px; color: white; font-size: 16px; line-height: 80px; text-align: center; background-color: #333;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
