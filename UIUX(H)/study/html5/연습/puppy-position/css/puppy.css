@@ -73,7 +73,8 @@ section{
    width:570px;
    height:530px;
    margin:0 auto;
-    /*position: absolute와 margin, float은 같이 쓸 수 없다.*/
+    /*position: absolute와 margin 0 auto, float은 같이 쓸 수 없다.
+    상하margin은 적용되지만 auto는 적용 불가*/
    padding:30px 10px 10px 10px;   
    background-color:#fff;
 }
@@ -114,6 +115,7 @@ section .frame{
 footer{
     position: absolute;
     top: 670px;
+    /*bottom : 0px도 가능*/
     left: 0px;
     width: 100%;
     height: 80px;
