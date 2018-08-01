@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+#wrap{
+   position: relative;
+   height: 760px;
+   width:600px;
+   margin:0 auto;
+   background-color:#333;
+}
+
+header{
+   position: absolute;
+   left:0;
+   top:0;
+   width:100%;
+   height:100px;
+   background-color:#069;
+}
+
+header>h1{
+   position: absolute;
+   left:30px;
+   top:40px;
+   color:#fff;
+   font-size:30px;
+}
+
+header>nav{
+    position: absolute;
+    left: 240px;
+    top: 45px;
+   
+}
+
+/*부모가 absolute면 그 자체가 기준점이 됨.*/
+header>nav>.gnb{
+   width:260px;
+   *zoom:1;
+}
+
+header>nav>.gnb:after{
+   display:block;
+   clear:both;
+   content:'';
+}
+
+header>nav>.gnb>li{
+   width:65px;
+   float: left;
+}
+
+header>nav>.gnb>li>a{/* 5점 */
+   display:block;
+   height:20px;
+   color:#fff;
+   line-height:20px;
+   text-align:center;
+}
+
+/* nth-child() 는 친형제 관계에서만 성립 */
+header>nav>.gnb>li:nth-child(3)>a,
+header>nav>.gnb>li:hover>a{
+   color:#ff0;
+   font-weight:800;
+   text-shadow:1px 1px 1px rgba(255,255,255,0.5);
+}
+
+
+section{
+   position: absolute;
+   left: 5px;
+   top: 100px;
+   width:570px;
+   height:530px;
+   margin:0 auto;
+    /*position: absolute와 margin, float은 같이 쓸 수 없다.*/
+   padding:30px 10px 10px 10px;   
+   background-color:#fff;
+}
+
+section>h2{
+   margin-bottom:55px;
+   color:#000;
+   font-size:25px;
+}
+
+section>p{
+   font-size:14px;
+   line-height:1.5;/*150%*/
+   *zoom:1;
+}
+
+section>p:after{
+   display:block;
+   clear:both;
+   content:'';
+}
+
+section .frame{
+   display:block;
+   float:right;
+   width:300px;
+   height:200px;
+   margin:5px 0 5px 5px;
+   text-indent:-9999px;
+   background-image:url(../images/puppy_1.jpg);
+   background-size:cover;
+   border-radius:5px;
+   box-shadow:3px 3px 3px #aaa;
+}
+
+
+
+footer{
+    position: absolute;
+    top: 670px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    
+    
+}
+
+footer>address{
+   height:80px;
+   color:#fff;
+   font-weight:800;
+   font-size:16px;
+   line-height:80px;
+   text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
