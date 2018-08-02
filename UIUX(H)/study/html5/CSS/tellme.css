@@ -3,5 +3,37 @@
 section{padding: 20px 0 80px;/*p*/background-color:#2f2f2f;/*bgc*/}
 section>h2{margin-bottom: 20px; color: #fff;/*c*/font-weight: 700;/*fw*/font-size:18px;/*fz*/text-align: center; }
 
-section>.iam{width:865px;height:800px;margin: 0 auto;background-color: #fff;}
-section>.iam>dl{}
+section>.iam{overflow-y: scroll; width:845px;height: 420px; margin: 0 auto;background-color: #fff;*zoom:1;}
+
+section>.iam:after{display: block;clear: both; content: '';}
+
+section>.iam>dl{float:left;position: relative; width: 255px; height: 380px;margin-left: 20px;margin-top: 20px;; border: 1px solid #dedede;/*bd*/-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;/*bxz*/}
+
+section>.iam>dl>dt{color: #000; font-weight: 600; font-size: 15px; text-align: center;}
+
+section>.iam>dl>dd{padding: 20px; line-height: 1.8; text-align: center;}
+section>.iam>dl>dd>span{display: block;position: absolute; left: 0;bottom: 10px; width: 100%; color: #000; font-weight: 600; font-size: 15px;text-align: center;}
+/*기준점을 dl에 잡*/
+
+
+/*
+fl:ls
+d:b
+cl:b
+ct
+*/
+section>.iam>dl:nth-child(4),section>.iam>dl:nth-child(5),section>.iam>dl:nth-child(6){margin-bottom: 20px;}
+
+
+section>.iam>dl>dt:before{display: block; width: 122px; height: 122px;  margin: 20px auto; border: 1px solid transparent; border-radius: 200px; content:'';}
+/*가상선택자 before또는 after의 필수속성*/
+section>.iam>dl:nth-child(1)>dt:before{background-image: url(../images/tellme_01.jpg); background-size: cover; background-position: center;}
+section>.iam>dl:nth-child(2)>dt:before{background-image: url(../images/tellme_02.jpg); background-size: cover; background-position: center; }
+section>.iam>dl:nth-child(3)>dt:before{background-image: url(../images/tellme_03.jpg); background-size: cover; background-position: center; }
+section>.iam>dl:nth-child(4)>dt:before{background-image: url(../images/tellme_04.jpg);background-size: cover; background-position: center;}
+section>.iam>dl:nth-child(5)>dt:before{background-image: url(../images/tellme_05.jpg);background-size: cover; background-position: center;}
+section>.iam>dl:nth-child(6)>dt:before{background-image: url(../images/tellme_06.jpg);background-size: cover; background-position: center;};
+/*section>.iam>dl:nth-child(7)>dt:before{background-image: url(../images/tellme_07.jpg)};*/
+
+
+
