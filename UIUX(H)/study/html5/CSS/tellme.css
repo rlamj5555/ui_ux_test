@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+section{padding: 20px 0 80px;/*p*/background-color:#2f2f2f;/*bgc*/}
+section>h2{margin-bottom: 20px; color: #fff;/*c*/font-weight: 700;/*fw*/font-size:18px;/*fz*/text-align: center; }
+
+section>.iam{width:865px;height:800px;margin: 0 auto;background-color: #fff;}
+section>.iam>dl{}

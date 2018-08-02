@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+section.top{padding: 20px 0 80px;/*p*/background-color:#2f2f2f;/*bgc*/}
+section.top>h2{margin-bottom: 20px; color: #fff;/*c*/font-weight: 700;/*fw*/font-size:18px;/*fz*/text-align: center; }
+
+section.top>h2+div{width:800px;height:620px;margin: 0 auto;background-color: #fff;}
+
+div.total{position: relative;font-size: 11px;}
+
+div.jsy{position: absolute; top: 25px; left: 498px; width: 180px; height: 280px;text-align: center;border: 1px solid grey;}
+div.jsy>footer{margin-top: 30px;}
+
+div.khe{position: absolute; top: 25px; left: 308px; width: 180px; height: 280px;text-align: center;border: 1px solid grey;}
+div.khe>footer{margin-top: 30px;}
+
+div.lgj{position: absolute; top: 25px; left: 118px; width: 180px; height: 280px;text-align: center;border: 1px solid grey;}
+div.lgj>footer{margin-top: 62px;}
+
+div.jsr{position: absolute; top: 315px; left: 593px; width: 180px; height: 280px;text-align: center;border: 1px solid grey;}
+div.jsr>footer{margin-top: 62px;}
+
+div.lsm{position: absolute; top: 315px; left: 403px; width: 180px; height: 280px;text-align: center;border: 1px solid grey;}
+div.lsm>footer{margin-top: 46px;}
+
+div.pja{position: absolute; top: 315px; left: 213px; width: 180px; height: 280px;text-align: center;border: 1px solid grey;}
+div.pja>footer{margin-top: 14px;}
+
+div.yym{position: absolute; top: 315px; left: 23px; width: 180px; height: 280px;text-align: center;border: 1px solid grey;}
+div.pja>footer{margin-top: 14px;}
+
+
+div>section>span.img {display: block; width: 100px; height: 100px; margin:10px 40px;text-indent: -9999px;border: 1px solid transparent; border-radius: 100px; background-position: center;background-size: cover; }
+div.yym>footer{margin-top: 14px;}
+
+
+div>section>h3{margin-bottom: 10px;}
+div>footer{font-style: italic; font-weight: 800; }
+
+div.jsy>section>span.img{background-image: url(../images/seoyoung.jpg); }
+div.khe>section>span.img{background-image: url(../images/haeun.jpg); }
+div.lgj>section>span.img{background-image: url(../images/gyujin.jpg); }
+div.jsr>section>span.img{background-image: url(../images/sora.jpg); }
+div.lsm>section>span.img{background-image: url(../images/sunmin.jpg); }
+div.pja>section>span.img{background-image: url(../images/jian.jpg); }
+div.yym>section>span.img{background-image: url(../images/yumin.jpg); }
+
+
+
+
