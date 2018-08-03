@@ -2,7 +2,7 @@
 #wrap{width: 840px; height: 1188px; margin: 0 auto;}
 div.bg{position: relative; top: -10px; width: 840px; height: 1188px; background-image: url(../images/background_texture.jpg);}
 
-header>h1{position: relative; top: 70px; left: 40px; padding: 15px 0; width: 750px; color: #e71158; font-size: 50px; font-weight: 550;line-height: 50px;font-family:'Franklin Gothic Medium Cond';border:3px solid transparent;  border-top-color:  #e71158;}
+header>h1{position: absolute; top: 70px; left: 40px; padding: 15px 0; width: 750px; color: #e71158; font-size: 50px; font-weight: 550;line-height: 50px;font-family:'Franklin Gothic Medium Cond';border:3px solid transparent;  border-top-color:  #e71158;}
 header>p{position: absolute; top: 50px; left: 650px; color: #efefef; font-weight:300; font-family: 'Adobe 명조 Std'; }
 
 p.box{position: absolute; top: 310px; left: 40px; width: 380px; height: 1px; background-color: #e71158;}
