@@ -1,0 +1,18 @@
+@charset "utf-8"; 
+#wrap{width: 840px; height: 1188px; margin: 0 auto;}
+div.bg{position: relative; top: -10px; width: 840px; height: 1188px; background-image: url(../images/background_texture.jpg);}
+
+header>h1{position: relative; top: 70px; left: 40px; padding: 15px 0;width: 750px; color: #e71158; font-size: 50px; font-weight: 550;line-height: 50px;font-family:'Franklin Gothic Medium Cond';border:3px solid #e71158;  border-right-color: transparent;border-bottom-color: transparent;border-left-color: transparent;}
+header>p{position: absolute; top: 50px; left: 650px; color: #efefef; font-weight:300; font-family: 'Adobe 명조 Std'; }
+p.box{position: absolute; top: 310px; left: 40px; width: 380px; height: 1px; background-color: #e71158;}
+
+span.top{position: absolute; color: #efefef; font-family: 'Adobe 명조 Std';}
+span.brain{display: block;position: absolute;top: 320px; left: 230px; width: 400px;height: 400px; text-indent: -9999px;background-image: url(../images/brain_design.png);background-size: cover;background-repeat: no-repeat;}
+span.me_img{display: block;position: absolute; top: 800px; left: 60px; width: 220px;height:220px; text-indent: -9999px; background-image: url(../images/me.jpg); background-size: cover;}
+span.bold{color:#e71158; font-weight: 700;}
+
+section>p{position: absolute; top: 850px;left: 330px; color: #efefef; font-size: 16px ;font-weight: 400; line-height: 23px;text-align: center; font-family:'Adobe 명조 Std'; }
+section>h2{position: absolute; top: 800px; left: 350px; color: #efefef;font-size: 23px;font-weight: 500; font-family: 'Adobe 명조 Std';}
+
+footer{position: absolute;width: 750px; height: 50px; top: 1100px; left: 45px; color: #efefef;font-weight: 200; line-height: 80px;font-family:  'Adobe 명조 Std';text-align: right; border: 1px solid transparent; border-top-color:#e71158; }
+
